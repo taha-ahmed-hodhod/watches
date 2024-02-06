@@ -1,0 +1,289 @@
+.container:first-child {
+  height: 50px;
+  background-color: white;
+  align-items: center;
+}
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  box-shadow: 10px 0 10px 4px rgba(1, 1, 1, 0.251);
+  z-index: 11111;
+}
+.container:first-child .collapse .nav-item a {
+  padding: 10px;
+  margin-right: 10px;
+}
+.container:first-child .collapse .nav-item a:hover {
+  background-color: rgba(255, 0, 0, 0.489);
+}
+.main {
+  height: 140vh;
+  background-color: rgba(128, 128, 128, 0.068);
+  overflow: hidden;
+}
+.main .container .row button{
+  padding: 10px 15px;
+  transition: 0.7s ease;
+}
+.main .container .row button:hover{
+  background-color: gray;
+}
+.main .container h1 {
+  font-size: 80px;
+  font-weight: 700;
+  color: rgb(6, 6, 104);
+}
+.container:nth-child(2) p {
+  font-size: 19px;
+  margin: 20px 0;
+}
+/* ------3 sec------- */
+.box-1 .img-box {
+  overflow: hidden;
+}
+.img-box img {
+  transition: 0.5s ease;
+  object-fit: fill;
+}
+.box-1 .img-box:hover img {
+  transform: scale(1.3);
+  z-index: -1;
+}
+.boxs .container h1 {
+  font-weight: 800;
+}
+.boxs {
+  margin: 60px 0;
+  min-height: 100vh;
+}
+/* -----4 sec---- */
+.Products {
+  overflow: hidden;
+  height: auto;
+}
+.Products .row div img {
+  transition: 0.7s ease-out;
+  width: 100%;
+  height: 100%;
+}
+.Products .row .vv {
+  overflow: hidden;
+}
+.Products .row .vv:hover img {
+  opacity: 85%;
+  overflow: hidden;
+  transform: scale(1.1);
+}
+/* ----6 sec------ */
+.menu {
+  margin-top: 50px;
+ min-height: 70em;
+ overflow: hidden;
+}
+.menu .container {
+  text-align: center;
+}
+.card-1 {
+  margin-top: 20px;
+}
+.menu .container h1 {
+  font-weight: 800;
+}
+.menu .card-img {
+  border-bottom: 2px solid red;
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+.menu .card-img .cap {
+  position: absolute;
+  width: 100%;
+  background-color: red;
+  color: white;
+  bottom: 0;
+  display: none;
+  padding: 10px 0;
+  transition: 0.3s ease;
+}
+.menu .card-img .cap a {
+  text-decoration: none;
+  color: white;
+}
+.menu .card-img i {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 25px;
+  display: none;
+  color: black;
+}
+.menu .card-img:hover .cap {
+  display: block;
+}
+.menu .card-img:hover i {
+  display: block;
+}
+.card-img img {
+  width: 100%;
+}
+.card-cap {
+  margin-top: 15px;
+}
+.card-cap h3 {
+  font-size: 20px;
+}
+.card-cap p {
+  color: red;
+}
+
+/* -----6 sec----- */
+.many{
+  height: 80vh;
+  margin: 40px 0;
+
+}
+.many .container .cc  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.many .container .cc p {
+  margin: 25px 0;
+}
+.many .container .cc button{
+  padding: 10px 15px;
+}
+/* ----8 sec----- */
+.bord{
+  margin: 40px 0 ;
+height: 30vh;
+}
+.bord .container .rr{
+  display: flex;
+  justify-content: center;
+  flex-wrap:wrap ;
+}
+.bord .container .rr .e-1{
+  background-color: red;
+  color: white;
+  padding: 20px;
+}
+.bord .container .rr .e-1 i{
+  font-size: 30px;
+}
+.bord .container .rr .e-1 h3{
+  font-size: 19px;
+  margin: 10px 0;
+}
+/* ---foteer---- */
+footer {
+  height: 70vh;
+  padding: 50px;
+}
+footer .foot-1{
+  margin-left: 30px;
+}
+footer .foot-1 .mlinks a{
+  display: block;
+  text-decoration: none;
+  color: gray;
+  margin-bottom: 10px;
+}
+footer .foot-1 .mlinks a:hover{
+  text-decoration: underline;
+}
+footer .foot-1 .mlinks p{
+  margin: 35px 0;
+  color: gray;
+}
+footer .foot-1 .mlinks h3{
+  margin-bottom: 15px;
+  font-size: large;
+  font-weight: 700;
+}
+footer .foot-2{
+  margin-top: 60px;
+  margin-left: 30px;
+}
+footer .foot-2 i{
+   margin-right: 10px;
+}
+
+
+
+/* ---------- */
+@media  (max-width: 567px)  {
+  .main .row  img:first-child{
+    display: none;
+  }
+  .main{
+    overflow: hidden;
+  }
+  .main .row{
+    padding-top: 100px;
+    text-align: center;
+  }
+  .boxs{
+    height: 200vh;
+    overflow: hidden;
+  }
+  .Products{
+    overflow: hidden;
+  }
+  .Products .row .vv{
+    margin-top: 20px;
+  }
+  .many{
+    overflow: hidden;
+  }
+  .menu{
+    height: 370vh;
+  }
+  .bord{
+    height: 70vh;
+  }
+  footer{
+   margin-right: 40px;
+    text-align: center;
+  }
+
+  
+}
+@media (max-width: 750px) {
+  .main .row  img:first-child{
+    display: none;
+  }
+  .nav-item a{
+    width: 100%;
+    background-color: white;
+  }
+  .main{
+     height: 100vh;
+     text-align: center;
+  }
+  .main .row  .pp{
+    display: block;
+    position: absolute;
+    top: 0;
+  }
+  .main .row{
+    padding-top: 150px;
+  }
+  .Products{
+    height: 200vh;
+  }
+  
+  
+}
+@media (max-width: 992px) {
+  .Products {
+    height: 300vh;
+  }
+  .main .row{
+  padding-top: 150px;
+}
+}
+
+
